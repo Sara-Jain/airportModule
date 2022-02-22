@@ -18,12 +18,13 @@ let findAirportDetails = (airportCode) => {
             Obj["name"] = curr.name
             Obj["city"] = curr.city
             Obj["country"] = curr.country
-           //return Obj;
+            //return Obj;
         }
         return Obj;
     }, {})
-    if(airportObj !== {}) return airportObj;
-    else return "Airport not found";
+    if (Object.keys(airportObj).length === 0)
+        return "Airport not found";
+    else return airportObj;
 }
 
-console.log(findAirportDetails('BSdk'));
+console.log(findAirportDetails('MMM'));
