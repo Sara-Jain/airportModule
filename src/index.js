@@ -1,10 +1,10 @@
+//Todo 
+//remove for loop
+//better way to access data
+//make a readme
 
 // exports.printMsg = function () {
 //     console.log("I made changes");
-// }
-
-// exports.anotherMsg = function(){
-//     console.log("Another message");
 // }
 
 const airportsData = require('../airportData');
