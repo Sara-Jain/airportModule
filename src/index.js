@@ -14,3 +14,4 @@ exports.findAirportDetails = (airportCode) => {
         return "Airport not found";
     else return airportObj;
 }
+
