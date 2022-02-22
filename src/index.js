@@ -1,5 +1,4 @@
 //Todo 
-//remove for loop
 //better way to access data
 //make a readme
 
@@ -10,7 +9,7 @@
 const airportsData = require('../airportData');
 //console.log(airportsData);
 
-let findAirportDetails = (airportCode) => {
+exports.findAirportDetails = (airportCode) => {
     //console.log(airportCode);
     const airportObj = airportsData.airports.reduce((Obj, curr) => {
         if (curr.code === airportCode) {
@@ -27,4 +26,4 @@ let findAirportDetails = (airportCode) => {
     else return airportObj;
 }
 
-console.log(findAirportDetails('MMM'));
+//console.log(findAirportDetails('MMM'));
