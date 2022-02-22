@@ -1,7 +1,7 @@
 const airportsData = require('../airportData');
 
 exports.findAirportDetails = (airportCode) => {
-    if(typeof airportCode !== string ) return "Invalid function argument.Pass String."
+    if(typeof airportCode !== 'string' ) return "Invalid function argument.Pass String."
     const airportObj = airportsData.airports.reduce((Obj, curr) => {
         if (curr.code === airportCode) {
             Obj["name"] = curr.name
@@ -14,4 +14,6 @@ exports.findAirportDetails = (airportCode) => {
         return "Airport not found";
     else return airportObj;
 }
+
+
 
